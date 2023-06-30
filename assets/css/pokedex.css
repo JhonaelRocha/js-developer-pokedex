@@ -1,7 +1,7 @@
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0;
+    margin: auto;
     padding: 0;
     list-style: none;
 }
@@ -118,7 +118,7 @@
     margin: .25rem 0;
     font-size: .625rem;
     border-radius: 1rem;
-    filter: brightness(1.1);
+    filter: brightness(1.2);
     text-align: center;
 }
 
@@ -145,6 +145,74 @@
     border: none;
     border-radius: 1rem;
 }
+
+
+
+
+
+.pokemon_status {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
+ 
+ .status_bar {
+   display: flex;
+   align-items: center;
+   height: 1.25rem;
+   margin-bottom: 5px;
+ }
+ 
+ .name {
+   width: 5rem;
+   font-size: 0.825rem;
+ }
+ 
+ .bar_container {
+   flex-grow: 1;
+   height: 0.625rem;
+   background-color: white;
+   margin-left: -1.2rem; 
+ }
+ 
+ .bar_fill {
+   height: 100%;
+   background-color: rgb(21, 255, 0);
+   border-top-right-radius: 1rem;
+   border-bottom-right-radius: 1rem;
+ }
+ 
+ .value {
+   margin-left: 0.625rem;
+   align-self: flex-end;
+ }
+
+
+ .ability_text{
+   font-size: 0.625rem;
+   text-align: center;
+   margin-top: 1rem;
+ }
+
+ .ability{
+   text-transform: capitalize;
+   background-color: white;
+   text-align: center;
+   border-radius: 1rem;
+ }
+ .ability.hidden{
+   background-color: rgb(150, 99, 192);
+   color: yellow;
+   filter: brightness(1.2);
+ }
+
+ .pesquisar{
+   border-radius: 1rem;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
 
 @media screen and (min-width: 380px) {
     .pokemons {

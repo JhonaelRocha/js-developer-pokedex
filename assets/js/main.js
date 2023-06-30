@@ -1,9 +1,11 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
-const maxRecords = 151
-const limit = 10
+const maxRecords = 151;
+const limit = 151;
 let offset = 0;
+/*Botão removido */
+loadMoreButton.parentElement.removeChild(loadMoreButton)
 
 function convertPokemonToLi(pokemon) {
     return `
@@ -19,6 +21,55 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
+            <div class="pokemon_status">
+               <div class="status_bar">
+                  <span class="name">HP</span>
+                  <div class="bar_container">
+                     <div class="bar_fill" style="width: ${pokemon.HP / 150 * 100}%;"></div>
+                  </div>
+                  <span class="value">${pokemon.HP}</span>
+               </div>
+               <div class="status_bar">
+                  <span class="name">At</span>
+                  <div class="bar_container">
+                     <div class="bar_fill" style="width: ${pokemon.Atack / 150 * 100}%;"></div>
+                  </div>
+                  <span class="value">${pokemon.Atack}</span>
+               </div>
+               <div class="status_bar">
+                  <span class="name">Def</span>
+                  <div class="bar_container">
+                     <div class="bar_fill" style="width: ${pokemon.Defense / 150 * 100}%;"></div>
+                  </div>
+                  <span class="value">${pokemon.Defense}</span>
+               </div>
+               <div class="status_bar">
+                  <span class="name">Sp.At</span>
+                  <div class="bar_container">
+                     <div class="bar_fill" style="width: ${pokemon.Sp_Atack / 150 * 100}%;"></div>
+                  </div>
+                  <span class="value">${pokemon.Sp_Atack}</span>
+               </div>
+               <div class="status_bar">
+                  <span class="name">Sp.Def</span>
+                  <div class="bar_container">
+                     <div class="bar_fill" style="width: ${pokemon.Sp_Defense / 150 * 100}%;"></div>
+                  </div>
+                  <span class="value">${pokemon.Sp_Defense}</span>
+               </div>
+               <div class="status_bar">
+                  <span class="name">Speed</span>
+                  <div class="bar_container">
+                     <div class="bar_fill" style="width: ${pokemon.Speed / 150 * 100}%;"></div>
+                  </div>
+                  <span class="value">${pokemon.Speed}</span>
+               </div>
+               <div class="ability_text">Ability</div>
+               <div class="ability"> ${pokemon.abilities}</div>
+               <div class="ability_text">Hidden Ability</div>
+               <div class="ability hidden"> ${pokemon.hidden_ability}</div>
+            </div>
+
         </li>
     `
 }
