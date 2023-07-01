@@ -87,10 +87,10 @@
 }
 
 .pokemon .number {
-    color: #000;
-    opacity: .3;
+    color: #ffffff;
+    opacity: .75;
     text-align: right;
-    font-size: .625rem;
+    font-size: 1rem;
 }
 
 .pokemon .name {
@@ -159,7 +159,7 @@
  .status_bar {
    display: flex;
    align-items: center;
-   height: 1.25rem;
+   height: 1rem;
    margin-bottom: 5px;
  }
  
