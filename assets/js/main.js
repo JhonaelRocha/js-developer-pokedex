@@ -1,8 +1,8 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
-const maxRecords = 151;
-const limit = 151;
+const maxRecords = 649;
+const limit = 649;
 let offset = 0;
 /*Botão removido */
 loadMoreButton.parentElement.removeChild(loadMoreButton)
