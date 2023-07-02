@@ -65,9 +65,9 @@ function convertPokemonToLi(pokemon) {
                   <span class="value">${pokemon.Speed}</span>
                </div>
                <div class="ability_text">Ability</div>
-               <div class="ability"> ${pokemon.abilities}</div>
+               <div class="ability" title="Ability" style="cursor: pointer;"> ${pokemon.abilities}</div>
                <div class="ability_text">Hidden Ability</div>
-               <div class="ability hidden"> ${pokemon.hidden_ability}</div>
+               <div class="ability hidden" title="Hidden Ability" style="cursor: pointer;"> ${pokemon.hidden_ability}</div>
             </div>
 
         </li>
